@@ -7,7 +7,7 @@
     "./demo/*.htm",
     "./demo/*.js"
   ],
-  "dependencies": [
+  "dependencies": {
     "iscroll": "5.x"
-  ]
+  }
 }
