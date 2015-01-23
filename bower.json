@@ -6,5 +6,8 @@
     "./demo/*.css",
     "./demo/*.htm",
     "./demo/*.js"
+  ],
+  "dependencies": [
+    "iscroll": "5.x"
   ]
 }
