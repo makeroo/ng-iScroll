@@ -1,7 +1,7 @@
-ng-iScroller v1.1
+ng-iScroller v1.2b
 ============
 
-AngularJS Module that enables iScroll 4.x to work using a directive.  If you are looking for a iScroll 5 compatible version please checkout the [ng-iScoll 1.2b branch](https://github.com/ibspoof/ng-iScroll/tree/v1.2b) 
+AngularJS Module that enables iScroll 5.x to work using a directive
 
 Demos
 ------------
@@ -13,7 +13,11 @@ Note: Recommended to be used with iOS or Android devices only
 Dependencies
 ------------
 - [AngularJS 1.0.x](http://angularjs.org/)
-- [iScroll 4.x](https://github.com/cubiq/iscroll)   Version 4.2.x Recommended
+- [iScroll 5.x](https://github.com/cubiq/iscroll) 
+
+Special Notes
+------------
+This is a temp release to make ng-iScroll compatible with iScoll 5.0 Beta
 
 
 Reporting Issues
@@ -50,7 +54,6 @@ Options
 
 **Binding Delay**:
 If you want to delay the iScroll binding due to having animations or using another JS Library to modify the Angular view you can add a timeout value by using the attribute ```ng-iscroll-delay='{delayInMiliseconds}'```.  The default delay is 5ms.
-Note: the old method of setting the delay ```ng-iscroll='{delayInMiliseconds}'``` is still supported.
 
 **Forms**:
 Forms within an iScroll has certain issues with editing Text values or Select boxes.  To enable support for forms add the following option to the wrapper div: ```ng-iscroll-form='true'``` the default is set to 'false'
@@ -93,6 +96,14 @@ $scope.refreshiScroll = function ()
 	alert('wrapper refreshed');
 };
 ```
+
+The default settings for ng-iScroll are the following:
+- snap: true
+- momentum: true
+- hScrollbar: false
+- mouseWheel: true
+
+The above can be overridden using the $scope.$parent.myScrollOptions option in your Controller.
 
 For more examples see the demo directory.
 
